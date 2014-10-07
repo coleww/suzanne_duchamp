@@ -4,8 +4,8 @@
 
 
 .tower {
-  left: 100px;
-  top: 250px;
+  left: 135px;
+  top: 50px;
   font-size: 100px;
   font-weight: bold;
   /*color: red;*/
@@ -69,14 +69,14 @@
 
 
 .window {
-  top: 1000px;
+  top: 666px;
   margin-bottom:0;
 }
 
 .signature {
   border: 1px solid black;
-  top: 1050px;
-  left: 750px;
+  top: 725px;
+  left: 700px;
   width: 300px;
   height: 125px;
   font-style: italic;

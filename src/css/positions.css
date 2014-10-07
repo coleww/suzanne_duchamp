@@ -23,8 +23,8 @@
 }
 
 .big-green-circle {
-  top: 420px;
-  left: 142px;
+  top: 125px;
+  left: 65px;
 }
 
 .lil-gray-circle {
@@ -41,4 +41,9 @@
 .big-brown-circle {
   left: 85px;
   top: -300px;
+}
+
+.big-white-circle {
+  top: 50px;
+  left: 250px;
 }
