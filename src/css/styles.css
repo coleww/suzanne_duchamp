@@ -112,3 +112,16 @@
   margin-top: 15px;
 }
 
+
+.white-star {
+  font-size: 180px;
+  color: white;
+  left: 375px;
+  top: -25px;
+}
+
+.red-star {
+  font-size: 350px;
+  left: 530px;
+  top: -70px;
+}
