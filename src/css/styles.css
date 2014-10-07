@@ -12,6 +12,31 @@
 }
 
 
+.circle {
+  border-radius: 100%;
+  border: 1px solid black;
+}
+
+.circle-large {
+  width: 500px;
+  height: 500px;
+  /*background-color:;*/
+}
+
+.circle-lrg {
+  width: 400px;
+  height: 400px;
+}
+
+.circle-sm {
+  width: 200px;
+  height: 200px;
+}
+
+.circle-med {
+  width: 300px;
+  height: 300px;
+}
 
 
 

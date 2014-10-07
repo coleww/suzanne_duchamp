@@ -21,3 +21,24 @@
   bottom: 0;
   right: 0;
 }
+
+.big-green-circle {
+  top: 420px;
+  left: 142px;
+}
+
+.lil-gray-circle {
+  top: -25px;
+  left: -75px;
+}
+
+
+.lil-grey-circle {
+  top: 55px;
+  left: 45px;
+}
+
+.big-brown-circle {
+  left: 85px;
+  top: -300px;
+}

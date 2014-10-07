@@ -11,17 +11,17 @@
 .color11 { color: #7c641c}
 .color12 { color: #5a4824}
 .color13 { color: #d7c6ac}
-.color14 { color: #625141}
+.brown { background-color: #625141}
 .color15 { color: #a49c89}
-.color16 { color: #2e3d14}
+.deep-green { color: #2e3d14}
 .color17 { color: #613c12}
 .color18 { color: #dccbb1}
 .color19 { color: #857c5f}
 .color20 { color: #584121}
 .color21 { color: #362b19}
 .color22 { color: #a7977d}
-.color23 { color: #455612}
-.color24 { color: #4d5a15}
+.drk-grn { background-color: #455612; opacity: 0.55;}
+.olive { background-color: #4d5a15; opacity: 0.5;}
 .color25 { color: #4b3b24}
 .color26 { color: #2a391a}
 .color27 { color: #c3b298}
@@ -69,15 +69,15 @@
 .colour20 { color: #454a33}
 .bg1 { background-color: #bac1ba}
 .colour22 { color: #a1969a}
-.colour23 { color: #2d5608}
+.brt-green { background-color: #2d5608}
 .colour24 { color: #4d6044}
 .colour25 { color: #3e3f00}
 .colour26 { color: #122921}
 .colour27 { color: #b9afae}
 .colour28 { color: #12210e}
-.colour29 { color: #999e98}
-.colour30 { color: #a19fa2}
-.colour31 { color: #8e8a8b}
+.medgray { background-color: #999e98}
+.ltgray { background-color: #a19fa2;opacity: 0.5;}
+.drkgray { background-color: #8e8a8b;opacity: 0.5;}
 .colour32 { color: #eccbba}
 .colour33 { color: #ad9287}
 .colour34 { color: #6b705c}
