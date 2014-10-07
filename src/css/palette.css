@@ -11,32 +11,32 @@
 .color11 { color: #7c641c}
 .color12 { color: #5a4824}
 .color13 { color: #d7c6ac}
-.brown { background-color: #625141}
+.brown { background-color: #625141; opacity: 0.8;}
 .color15 { color: #a49c89}
-.deep-green { color: #2e3d14}
+.deep-green { color: #2e3d14; opacity: 0.8;}
 .color17 { color: #613c12}
-.yella { color: #dccbb1}
+.yella { color: #dccbb1; opacity: 0.8;}
 .color19 { color: #857c5f}
 .color20 { color: #584121}
 .color21 { color: #362b19}
 .color22 { color: #a7977d}
 .drk-grn { background-color: #455612; opacity: 0.55;}
 .olive { background-color: #4d5a15; opacity: 0.5;}
-.brawn { background-color: #4b3b24}
+.brawn { background-color: #4b3b24; opacity: 0.8;}
 .color26 { color: #2a391a}
 .color27 { color: #c3b298}
 .color28 { color: #77674d}
 .color29 { color: #404652}
 .color30 { color: #b2a187}
 .color31 { color: #ac9c83}
-.brnish { background-color: #a8a474}
+.brnish { background-color: #a8a474; opacity: 0.6;}
 .color33 { color: #ba9970}
 .color34 { color: #786254}
 .color35 { color: #a8997c}
 .color36 { color: #8f7f65}
 .color37 { color: #968470}
 .color38 { color: #b38b58}
-.bars { color: #65656d}
+.bars { color: #65656d; opacity: 0.9;}
 .color40 { color: #87677e}
 .color41 { color: #a5957c}
 .color42 { color: #807057}
@@ -69,13 +69,13 @@
 .colour20 { color: #454a33}
 .bg1 { background-color: #bac1ba}
 .colour22 { color: #a1969a}
-.brt-green { background-color: #2d5608}
+.brt-green { background-color: #2d5608; opacity: 0.7;}
 .colour24 { color: #4d6044}
 .colour25 { color: #3e3f00}
 .colour26 { color: #122921}
 .colour27 { color: #b9afae}
 .colour28 { color: #12210e}
-.medgray { background-color: #999e98}
+.medgray { background-color: #999e98; opacity: 0.7;}
 .ltgray { background-color: #a19fa2;opacity: 0.5;}
 .drkgray { background-color: #8e8a8b;opacity: 0.5;}
 .colour32 { color: #eccbba}
@@ -83,7 +83,7 @@
 .colour34 { color: #6b705c}
 .colour35 { color: #7b718c}
 .colour36 { color: #807f7a}
-.whitish { background-color: #9997a4;opacity: 0.8;}
+.whitish { background-color: #9997a4;opacity: 0.7;}
 .colour38 { color: #a58683}
 .colour39 { color: #7182a0}
 .colour40 { color: #c58095}
