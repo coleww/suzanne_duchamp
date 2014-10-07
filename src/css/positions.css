@@ -8,6 +8,8 @@
   position: absolute;
 }
 
+
+
 .bottom-left {
   top: 0;
   left: 0;
@@ -35,7 +37,7 @@
 
 .lil-grey-circle {
   top: 55px;
-  left: 45px;
+  left: 30px;
 }
 
 .big-brown-circle {
@@ -46,4 +48,18 @@
 .big-white-circle {
   top: 50px;
   left: 250px;
+}
+
+.med-brn-circle {
+  top: 100px;
+  left: 250px;
+}
+
+.sm-white-circle {
+  top: 100px;
+  left: 305px;
+}
+
+.sm-brn-circle {
+
 }

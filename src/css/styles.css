@@ -28,6 +28,11 @@
   height: 400px;
 }
 
+.circle-medee {
+  width: 250px;
+  height: 250px;
+}
+
 .circle-sm {
   width: 200px;
   height: 200px;
@@ -75,8 +80,8 @@
 
 .signature {
   border: 1px solid black;
-  top: 725px;
-  left: 700px;
+  top: 750px;
+  left: 600px;
   width: 300px;
   height: 125px;
   font-style: italic;
