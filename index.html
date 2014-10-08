@@ -13,6 +13,7 @@
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body class="bg1">
+
   <div class="container">
 
     <div class="window item bottom-left">
@@ -194,16 +195,77 @@
       etc...
     </div>
 
-    <div class="item white-star yella">
+    <div class="item star white-star yella">
       *
     </div>
-    <div class="item red-star red">
+    <div class="item star red-star red">
       *
     </div>
 
 
 
   </div>
-  <script src="app.js"></script>
+  <script src="vendor.js"></script>
+
+  <script>
+  // CIRCLE SHIMMER! WILL BE BETTER WITH MORE LAYERS?!?!?!
+    var $circles = $('.circle');
+    window.setInterval(function(){
+
+      var circle = _.sample($circles);
+
+      var width = $(circle).css("width").replace('px', '') | 0;
+
+      var turvy = (width -= 10) + 'px'
+      $(circle).css({opacity: Math.random(),
+                        width: turvy, height: turvy});
+    }, 300);
+
+// BALLOONS WILL FLY AWAY!
+    window.setInterval(function(){
+
+      var $bigCircle = $(_.sample($circles)).parent();
+      var top = $bigCircle.css("top").replace('px', '') | 0;
+      // console.log(top, left)
+      var topsy = (top -= 10) + 'px';
+
+
+      $bigCircle.css({top: topsy});
+    }, 50);
+
+
+// DECO ALL ZEE TEXTS! ADD MORE COLOR!
+    var $texts = $('.text');
+    window.setInterval(function(){
+
+      var text = _.sample($texts);
+      var textDeco = _.sample(['line-through', 'overline', 'underline', 'none'])
+      $(text).css({textDecoration: textDeco});
+    }, 500);
+
+
+// scaffolding totters!
+// travers the spans inside of $('.tower')
+// for each of them, remove it and insert it inside it's next lowest sibling
+// add CSS to tower to make the text overlay on each other and stuff (line0height...text-spacing?)
+
+
+// mirror would shatter
+// swap out iframe for things?
+// overlay duchamp esque cracks?
+
+
+// STAR WOULD DIM
+    var $stars = $('.star');
+    window.setInterval(function(){
+
+      var $star = $(_.sample($stars));
+      var opac = $star.css('opacity');
+      $star.css({opacity: opac -= 0.01});
+
+    }, 30);
+
+
+  </script>
 </body>
 </html>

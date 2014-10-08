@@ -10,6 +10,7 @@ gulp.task('watch', function () {
    gulp.watch('src/**/*', ['build']);
 });
 
+
 gulp.task('js', function() {
   gulp.src(['src/js/*.js'])
     .pipe(uglify())
@@ -21,5 +22,12 @@ gulp.task('css', function() {
   gulp.src(['src/css/*.css'])
     // .pipe(uglify())
     .pipe(concat('styles.css'))
+    .pipe(gulp.dest('./'));
+});
+
+gulp.task('vendor', function() {
+  gulp.src(['vendor/*.js'])
+    // .pipe(uglify())
+    .pipe(concat('vendor.js'))
     .pipe(gulp.dest('./'));
 });
