@@ -64,3 +64,63 @@
   top: 25px;
   left: 275px;
 }
+
+.sm-ora-circle {
+  top:700px;
+  left:240px;
+}
+
+.sm-blu-circle {
+  top:650px;
+  left:300px;
+}
+
+.sm-pnk-circle {
+  top:540px;
+  left:375px;
+}
+
+.sm-grn-circle {
+  top: 470px;
+  left: 325px;
+}
+
+.left-text {
+  top: 75px;
+  left: 13px;
+}
+
+.mid-left-text {
+  top: 50px;
+  left: 200px;
+}
+
+.rotate {
+
+/* Safari */
+-webkit-transform: rotate(-90deg);
+
+/* Firefox */
+-moz-transform: rotate(-90deg);
+
+/* IE */
+-ms-transform: rotate(-90deg);
+
+/* Opera */
+-o-transform: rotate(-90deg);
+
+/* Internet Explorer */
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+}
+
+.mid-right-text {
+  top: 125px;
+  left: 385px;
+}
+
+.right-text {
+  top: 95px;
+  left: 725px;
+  font-size: 27px !important;
+}
