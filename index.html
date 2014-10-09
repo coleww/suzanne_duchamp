@@ -302,9 +302,10 @@
 
 
 // WRECK THE TEXT
-$borebore = $(".boring")
+  $borebore = $(".boring");
+  var $bars = $(".bars");
+  $mirrorShatters =$(".left-text");
 
-  $mirrorShatters =$(".left-text")
   $mirrorShatters.click(function(e){
     $mirrorShatters.addClass('fade');
     window.setTimeout(function(){
@@ -314,7 +315,7 @@ $borebore = $(".boring")
     }, 5500)
 
     $('iframe').attr('src', "http://www.moma.org/audios/embed/29/734?autoplay=1")
-    var $bars = $(".bars")
+
     $bars.addClass('fade')
 
 
@@ -422,13 +423,22 @@ $('.signature-multi').click(function(){
 // WRECK THE LAYOUT
 
   $('.signature-top-right').click(function(){
-    $(".item").css({position: 'relative'})
+    $(".item").css({position: 'static'})
   })
 
 // RESTORE IT
   $(".signature-bot-right").click(function(){
 
     $(".item").css({position: 'absolute'})
+
+    // IF FINISHED ALEADY@!
+
+    $bars.css({opacity: 1})
+    // $('iframe').attr('src', '//www.youtube.com/embed/zUbKbhyEZYY?autoplay=1&controls=0&loop=1&playlist=zUbKbhyEZYY')
+    $('.tower').css({fontSize: '100px', top: 0});
+    $('.circle').each(function(){
+      $(this).parent().css({top: '1000px'})
+    })
   })
 //
   </script>
