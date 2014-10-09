@@ -1,0 +1,1 @@
+$(function(){function t(){this.circles=$(".circle").makeArray()}t.prototype.start=function(){this.intervalId=window.setInterval(function(){var t=$(_.sample(this.circles));t.css({opacity:Math.random()})},500)},t.prototype.stop=function(){window.clearInterval(this.intervalId)};var n=new t;n.start()});

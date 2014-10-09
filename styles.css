@@ -1,0 +1,441 @@
+.red { color: #77322b}
+.brown { background-color: #625141; opacity: 0.8;}
+.deep-green { color: #2e3d14; opacity: 0.6;}
+.yella { color: #dccbb1; opacity: 0.8;}
+.drk-grn { background-color: #455612; opacity: 0.55;}
+.olive { background-color: #4d5a15; opacity: 0.5;}
+.brawn { background-color: #4b3b24; opacity: 0.8;}
+.brnish { background-color: #a8a474; opacity: 0.6;}
+.bars { color: #65656d; opacity: 0.9;}
+.ora { background-color: #d2bb6d; opacity: 0.6;}
+.lter-gray { background-color: #d5d5d5; opacity: 0.85;}
+.bg1 { background-color: #bac1ba}
+.brt-green { background-color: #2d5608; opacity: 0.5;}
+.grn { background-color: #4d6044; opacity: 0.8;}
+.medgray { background-color: #999e98; opacity: 0.7;}
+.ltgray { background-color: #a19fa2;opacity: 0.5;}
+.drkgray { background-color: #8e8a8b;opacity: 0.5;}
+.whitish { background-color: #9997a4;opacity: 0.7;}
+.pnk { background-color: #c58095; opacity: 0.7;}
+.blu { background-color: #6d8db3; opacity: 0.6;}
+
+
+
+
+
+
+.color1 { color: #a99975}
+
+.color2 { color: #8a7a59}
+
+.color3 { color: #715f39}
+
+.color4 { color: #715c2d}
+
+.color5 { color: #665424}
+
+.color7 { color: #978b71}
+
+.color8 { color: #a99a7b}
+
+.color9 { color: #94825e}
+
+.color10 { color: #6f5637}
+
+.color11 { color: #7c641c}
+
+.color12 { color: #5a4824}
+
+.pinkish { color: #d7c6ac}
+
+.color15 { color: #a49c89}
+
+.color17 { color: #613c12}
+
+.color19 { color: #857c5f}
+
+.color20 { color: #584121}
+
+.color21 { color: #362b19}
+
+.color22 { color: #a7977d}
+
+.color26 { color: #2a391a}
+
+.color27 { color: #c3b298}
+
+.color28 { color: #77674d}
+
+.jay-z-blue { color: #404652}
+
+.color30 { color: #b2a187}
+
+.color31 { color: #ac9c83}
+
+.color33 { color: #ba9970}
+
+.color34 { color: #786254}
+
+.color35 { color: #a8997c}
+
+.color36 { color: #8f7f65}
+
+.color37 { color: #968470}
+
+.color38 { color: #b38b58}
+
+.color40 { color: #87677e}
+
+.color41 { color: #a5957c}
+
+.color42 { color: #807057}
+
+.color43 { color: #4a422f}
+
+.color44 { color: #898375}
+
+.color45 { color: #b1a28d}
+
+.color46 { color: #1c1a1f}
+
+.color47 { color: #98939a}
+
+.color48 { color: #a29278}
+
+.color49 { color: #93876d}
+
+.colour1 { color: #777963}
+
+.colour2 { color: #a9a19f}
+
+.colour3 { color: #5d5c48}
+
+.colour5 { color: #585449}
+
+.colour6 { color: #802534}
+
+.colour7 { color: #9395ac}
+
+.colour8 { color: #787e74}
+
+.colour9 { color: #76786a}
+
+.colour10 { color: #a3948f}
+
+.colour11 { color: #5f6100}
+
+.colour12 { color: #494d01}
+
+.colour14 { color: #272b37}
+
+.colour15 { color: #9c9b99}
+
+.greenish { color: #073518}
+
+.colour17 { color: #625119}
+
+.colour18 { color: #ccbfc8}
+
+.colour19 { color: #a0a89b}
+
+.colour20 { color: #454a33}
+
+.colour22 { color: #a1969a}
+
+.colour25 { color: #3e3f00}
+
+.colour26 { color: #122921}
+
+.colour27 { color: #b9afae}
+
+.colour28 { color: #12210e}
+
+.colour32 { color: #eccbba}
+
+.colour33 { color: #ad9287}
+
+.colour34 { color: #6b705c}
+
+.colour35 { color: #7b718c}
+
+.colour36 { color: #807f7a}
+
+.colour38 { color: #a58683}
+
+.tru-blu { color: #7182a0}
+
+.colour41 { color: #9d9195}
+
+.colour42 { color: #a2a395}
+
+.colour43 { color: #404443}
+
+.colour44 { color: #bdb6c8}
+
+.colour45 { color: #888f97}
+
+.blkish { color: #190d1b}
+
+.colour48 { color: #96968e}
+
+.colour49 { color: #9c9c9a}
+
+.container {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.item {
+  position: absolute;
+}
+
+
+
+.bottom-left {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.bottom-right {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.big-green-circle {
+  top: 125px;
+  left: 65px;
+}
+
+.lil-gray-circle {
+  top: -25px;
+  left: -75px;
+}
+
+
+.lil-grey-circle {
+  top: 55px;
+  left: 30px;
+}
+
+.big-brown-circle {
+  left: 85px;
+  top: -300px;
+}
+
+.big-white-circle {
+  top: 50px;
+  left: 250px;
+}
+
+.med-brn-circle {
+  top: 100px;
+  left: 250px;
+}
+
+.sm-white-circle {
+  top: 100px;
+  left: 295px;
+}
+
+.sm-brn-circle {
+  top: 25px;
+  left: 275px;
+}
+
+.sm-ora-circle {
+  top:700px;
+  left:240px;
+}
+
+.sm-blu-circle {
+  top:650px;
+  left:300px;
+}
+
+.sm-pnk-circle {
+  top:540px;
+  left:375px;
+}
+
+.sm-grn-circle {
+  top: 470px;
+  left: 325px;
+}
+
+.left-text {
+  top: 75px;
+  left: 13px;
+}
+
+.mid-left-text {
+  top: 50px;
+  left: 200px;
+}
+
+.rotate {
+
+/* Safari */
+-webkit-transform: rotate(-90deg);
+
+/* Firefox */
+-moz-transform: rotate(-90deg);
+
+/* IE */
+-ms-transform: rotate(-90deg);
+
+/* Opera */
+-o-transform: rotate(-90deg);
+
+/* Internet Explorer */
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+}
+
+.mid-right-text {
+  top: 125px;
+  left: 385px;
+}
+
+.right-text {
+  top: 95px;
+  left: 725px;
+  font-size: 27px !important;
+}
+.center {
+  text-align: center;
+}
+
+
+.tower {
+  left: 120px;
+  top: 50px;
+  font-size: 100px;
+  font-weight: bold;
+  /*color: red;*/
+}
+
+
+.circle {
+  border-radius: 100%;
+  border: 1px solid black;
+}
+
+.circle-large {
+  width: 500px;
+  height: 500px;
+  /*background-color:;*/
+}
+
+.circle-lrg {
+  width: 400px;
+  height: 400px;
+}
+
+.circle-medee {
+  width: 250px;
+  height: 250px;
+}
+
+.circle-sm {
+  width: 200px;
+  height: 200px;
+}
+
+.circle-med {
+  width: 300px;
+  height: 300px;
+}
+
+
+
+
+.window-frame {
+  font-size: 450px;
+  left: 120px;
+  top: -100px;
+  color: ;
+}
+
+.window-skyline {
+  width: 550px;
+  height: 300px;
+}
+
+.window-top {
+  color: ;
+  top: -75px;
+  left: 250px;
+  font-size: 225px;
+  max-height: 100px;
+  font-style: italic;
+  font-stretch: ultra-expanded;
+  /*display:inline-block;*/
+    transform:scale(10,1); /* W3C */
+  text-shadow: -2px -3px 0px rgba(100, 100, 100, .75), -4px -6px 0px rgba(150, 150, 150, .65),-6px -9px 0px rgba(200, 200, 200, .5),-8px -12px 0px rgba(200, 200, 200, .5),-10px -15px 0px rgba(200, 200, 200, .5),-12px -18px 0px rgba(200, 200, 200, .5),-14px -21px 0px rgba(200, 200, 200, .5),-16px -24px 0px rgba(200, 200, 200, .5);
+}
+
+
+
+.window {
+  top: 700px;
+  margin-bottom:0;
+}
+
+.signature {
+  border: 1px solid black;
+  top: 750px;
+  left: 600px;
+  width: 250px;
+  height: 125px;
+  font-style: italic;
+  font-size: 25px;
+  padding: 15px;
+}
+
+.signature-top-right {
+  text-align: right;
+  margin-bottom: 15px;
+}
+
+.signature-multi {
+  font-weight: bold;
+}
+
+.signature-middle {
+  text-align: right;
+}
+
+.signature-bot-right {
+  text-align: right;
+}
+
+.signature-name {
+  text-align: center;
+  font-size: 15px ;
+  margin-top: 15px;
+}
+
+
+.white-star {
+  font-size: 180px;
+  color: white;
+  left: 375px;
+  top: -25px;
+}
+
+.red-star {
+  font-size: 350px;
+  left: 530px;
+  top: -70px;
+  margin: 0;
+  padding: 0;
+}
+
+.text {
+  font-size: 33px;
+}
