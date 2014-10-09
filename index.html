@@ -22,14 +22,7 @@
       <div class="item bars window-frame">|</div>
     </div>
 
-    <div class="signature item bottom-right">
-      <div class="signature-top-right">Broken</div>
-      <div class="signature-middle">
-        <span class="signature-multi">Multiplication</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and
-      </div>
-      <div class="signature-bot-right">Restored</div>
-      <div class="signature-name">Suzanne Duchamp . 1918-1919 .</div>
-    </div>
+
 
     <div class="item big-green-circle">
       <div class="item circle drk-grn circle-large golden">&nbsp;</div>
@@ -211,7 +204,14 @@
 
 
 
-
+    <div class="signature item bottom-right">
+      <div class="signature-top-right">Broken</div>
+      <div class="signature-middle">
+        <span class="signature-multi">Multiplication</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and
+      </div>
+      <div class="signature-bot-right">Restored</div>
+      <div class="signature-name">Suzanne Duchamp . 1918-1919 .</div>
+    </div>
 
 
 
@@ -229,7 +229,11 @@
 
 
 
+    <div class="boring item panel pasta fade">
 
+
+
+    </div>
 
 
 
@@ -336,6 +340,69 @@
     // }, 30);
 
 
+
+
+
+// WRECK THE TEXT
+$borebore = $(".boring")
+  $borebore.css({opacity: 0.7, borderRadius: '5%'})
+  $mirrorShatters =$(".left-text")
+  $mirrorShatters.click(function(e){
+    $mirrorShatters.addClass('fade');
+    window.setTimeout(function(){
+      $borebore.append(_.shuffle($mirrorShatters.text().split("")));
+      $mirrorShatters.remove();//css({opacity: 1})
+    }, 5500)
+  })
+
+  $scaffoldTots =$(".mid-left-text")
+  $scaffoldTots.click(function(e){
+    $scaffoldTots.addClass('fade');
+    window.setTimeout(function(){
+      $borebore.append(_.shuffle($scaffoldTots.text().split("")));
+      $scaffoldTots.remove();//css({opacity: 1})
+    }, 5500)
+  })
+
+
+    $ballFly =$(".mid-right-text")
+  $ballFly.click(function(e){
+    $ballFly.addClass('fade');
+    window.setTimeout(function(){
+      $borebore.append(_.shuffle($ballFly.text().split("")));
+      $ballFly.remove();//css({opacity: 1})
+    }, 5500)
+  })
+
+
+    $stardim =$(".right-text")
+  $stardim.click(function(e){
+    $stardim.addClass('fade');
+    window.setTimeout(function(){
+      $borebore.append(_.shuffle($stardim.text().split("")));
+      $stardim.remove();//css({opacity: 1})
+    }, 5500)
+  })
+
+
+
+
+
+
+
+
+// WRECK THE LAYOUT
+
+  $('.signature-top-right').click(function(){
+    $(".item").css({position: 'relative'})
+  })
+
+// RESTORE IT
+  $(".signature-bot-right").click(function(){
+
+    $(".item").css({position: 'absolute'})
+  })
+//
   </script>
 </body>
 </html>

@@ -93,6 +93,14 @@
   left: 200px;
 }
 
+.boring {
+  top: 50px;
+  left: 966px;
+  /*border: 1px solid black;*/
+  width: 500px;
+  height: 900px;
+  padding: 25px;
+}
 .rotate {
 
 /* Safari */
