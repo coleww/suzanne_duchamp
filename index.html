@@ -16,7 +16,7 @@
   <div class="container">
 
     <div class="window item bottom-left">
-        <!-- <iframe class="item window-skyline" src="//www.youtube.com/embed/zUbKbhyEZYY?autoplay=1&controls=0&loop=1&playlist=zUbKbhyEZYY" frameborder="0"></iframe> -->
+        <iframe class="item window-skyline" src="//www.youtube.com/embed/zUbKbhyEZYY?autoplay=1&controls=0&loop=1&playlist=zUbKbhyEZYY" frameborder="0"></iframe>
 
       <div class="item bars window-top">/</div>
       <div class="item bars window-frame">|</div>
@@ -230,13 +230,14 @@
 
 
     <div class="boring item panel pasta fade">
-
-
+      <em>A DADIST POEM THAT YOU JUST WROTE:</em>
 
     </div>
 
+    <div class="artbanner item fade">A WORK OF ART YOU JUST CREATED!</div>
+    <div class="bubble item panel  fade">
 
-
+    </div>
 
 
 
@@ -264,16 +265,7 @@
     }, 300);
 
 // BALLOONS WILL FLY AWAY!
-    // window.setInterval(function(){
 
-    //   var $bigCircle = $(_.sample($circles)).parent();
-    //   var top = $bigCircle.css("top").replace('px', '') | 0;
-    //   // console.log(top, left)
-    //   var topsy = (top -= 10) + 'px';
-
-
-    //   $bigCircle.css({top: topsy});
-    // }, 5);
 
 
 // DECO ALL ZEE TEXTS! ADD MORE COLOR!
@@ -286,33 +278,6 @@
     // }, 500);
 
 
-    // $towers = $('.tower').find('span');
-    // window.setInterval(function(){
-    //   if($towers.length > 1) {
-    //     var tower_index = ~~(Math.random() * ($towers.length - 1));
-    //     var $tower = $($towers[tower_index]);
-    //     var text = $tower.text();
-    //     var chars = text.split('');
-    //     var next_tower_text = $($towers[tower_index + 1]).text();
-
-    //     $($towers[tower_index + 1]).text(next_tower_text + _.sample(chars));
-
-    //     if (text.length > 1) {
-    //       $tower.text(text.substr(1,text.length -1))
-    //     } else {
-    //       var top = $('.tower').css('top').replace('px', '') | 0;
-    //       $('.tower').css({top: top + 5 + 'px'});
-
-
-    //       var f_size = $tower.css('fontSize').replace('px', '') | 0;
-    //       $('.tower').css({fontSize: f_size - 1 + 'px'});
-    //       $towers.css({fontSize: f_size - 1 + 'px'});
-    //       $tower.remove();
-    //     }
-
-
-    //   }
-    // }, 30)
 
 
 
@@ -330,14 +295,7 @@
 
 
 // STAR WOULD DIM
-    // var $stars = $('.star');
-    // window.setInterval(function(){
 
-    //   var $star = $(_.sample($stars));
-    //   var opac = $star.css('opacity');
-    //   $star.css({opacity: opac -= 0.01});
-
-    // }, 30);
 
 
 
@@ -345,51 +303,121 @@
 
 // WRECK THE TEXT
 $borebore = $(".boring")
-  $borebore.css({opacity: 0.7, borderRadius: '5%'})
+
   $mirrorShatters =$(".left-text")
   $mirrorShatters.click(function(e){
     $mirrorShatters.addClass('fade');
     window.setTimeout(function(){
+      $borebore.css({opacity: 0.7, borderRadius: '5%'})
       $borebore.append(_.shuffle($mirrorShatters.text().split("")));
       $mirrorShatters.remove();//css({opacity: 1})
     }, 5500)
+
+    $('iframe').attr('src', "http://www.moma.org/audios/embed/29/734?autoplay=1")
+    var $bars = $(".bars")
+    $bars.addClass('fade')
+
+
+
   })
 
   $scaffoldTots =$(".mid-left-text")
   $scaffoldTots.click(function(e){
     $scaffoldTots.addClass('fade');
     window.setTimeout(function(){
+      $borebore.css({opacity: 0.7, borderRadius: '5%'})
       $borebore.append(_.shuffle($scaffoldTots.text().split("")));
       $scaffoldTots.remove();//css({opacity: 1})
     }, 5500)
+
+    $towers = $('.tower').find('span');
+    window.setInterval(function(){
+      if($towers.length > 1) {
+        var tower_index = ~~(Math.random() * ($towers.length - 1));
+        var $tower = $($towers[tower_index]);
+        var text = $tower.text();
+        var chars = text.split('');
+        var next_tower_text = $($towers[tower_index + 1]).text();
+
+        $($towers[tower_index + 1]).text(next_tower_text + _.sample(chars));
+
+        if (text.length > 1) {
+          $tower.text(text.substr(1,text.length -1))
+        } else {
+          var top = $('.tower').css('top').replace('px', '') | 0;
+          $('.tower').css({top: top + 5 + 'px'});
+
+
+          var f_size = $tower.css('fontSize').replace('px', '') | 0;
+          $('.tower').css({fontSize: f_size - 1 + 'px'});
+          $towers.css({fontSize: f_size - 1 + 'px'});
+          $tower.remove();
+        }
+
+
+      }
+    }, 30)
   })
 
 
-    $ballFly =$(".mid-right-text")
+  $ballFly =$(".mid-right-text")
   $ballFly.click(function(e){
     $ballFly.addClass('fade');
     window.setTimeout(function(){
+      $borebore.css({opacity: 0.7, borderRadius: '5%'})
       $borebore.append(_.shuffle($ballFly.text().split("")));
       $ballFly.remove();//css({opacity: 1})
     }, 5500)
+
+    window.setInterval(function(){
+
+      var $bigCircle = $(_.sample($circles)).parent();
+      var top = $bigCircle.css("top").replace('px', '') | 0;
+      // console.log(top, left)
+      var topsy = (top -= 10) + 'px';
+
+
+      $bigCircle.css({top: topsy});
+    }, 5);
   })
 
 
-    $stardim =$(".right-text")
+  $stardim =$(".right-text")
   $stardim.click(function(e){
     $stardim.addClass('fade');
     window.setTimeout(function(){
+      $borebore.css({opacity: 0.7, borderRadius: '5%'})
       $borebore.append(_.shuffle($stardim.text().split("")));
       $stardim.remove();//css({opacity: 1})
     }, 5500)
+    var $stars = $('.star');
+    window.setInterval(function(){
+
+      var $star = $(_.sample($stars));
+      var opac = $star.css('opacity');
+      $star.css({opacity: opac -= 0.01});
+
+    }, 30);
   })
 
 
 
 
 
+var BUBBLE_COUNT = 0;
 
-
+  var $circs = $('.circle')
+$('.signature-multi').click(function(){
+  if(!BUBBLE_COUNT){
+    $('.bubble').css({opacity: 1})
+  }
+  BUBBLE_COUNT++;
+  if(BUBBLE_COUNT < 16){
+    $('.bubble').append(_.shuffle($circs.clone().css({position: 'static', width: '20px', height: '20px', display: 'inline-block'})));
+  } else {
+    $('.artbanner').css({opacity: 1})
+  }
+})
 
 // WRECK THE LAYOUT
 

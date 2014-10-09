@@ -98,8 +98,26 @@
   left: 966px;
   /*border: 1px solid black;*/
   width: 500px;
-  height: 900px;
+  height: 300px;
   padding: 25px;
+}
+
+.artbanner {
+  top: 425px;
+  font-weight: bold;
+  left: 1000px;
+}
+
+.bubble {
+  top: 450px;
+  left: 966px;
+  /*border: 1px solid black;*/
+  background-color: white;
+  width: 500px;
+  height: 300px;
+  padding: 50px;
+  /*overflow: scroll;*/
+  /*overflow-x: none;*/
 }
 .rotate {
 
