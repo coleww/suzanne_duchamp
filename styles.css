@@ -27,10 +27,33 @@
 .orang { background-color: #eccbba; opacity: 0.6;}
 
 /*text colorssss*/
-.tru-blu { color: #7182a0}
-.blkish { color: #190d1b}
-.greenish { color: #073518}
+.tru-blu { color: #7182a0;
+text-shadow:
+   -1px -1px 0 #bdb6c8,
+    1px -1px 0 #bdb6c8,
+    -1px 1px 0 #bdb6c8,
+     1px 1px 0 #bdb6c8;}
+.blkish { color: #190d1b;
+text-shadow:
+   -1px -1px 0 #a0a89b,
+    1px -1px 0 #a0a89b,
+    -1px 1px 0 #a0a89b,
+     1px 1px 0 #a0a89b;}
+.greenish { color: #073518;
+text-shadow:
+   -1px -1px 0 #494d01,
+    1px -1px 0 #494d01,
+    -1px 1px 0 #494d01,
+     1px 1px 0 #494d01;}
 .pinkish { color: #d7c6ac}
+
+.scoffz {
+  color: #87677e;
+text-shadow:
+   -1px -1px 0 #b38b58,
+    1px -1px 0 #b38b58,
+    -1px 1px 0 #b38b58,
+     1px 1px 0 #b38b58;}
 
 /*STARZ*/
 .red { color: #77322b}
@@ -99,7 +122,6 @@
 
 .color38 { background-color: #b38b58}
 
-.color40 { background-color: #87677e}
 
 .color41 { background-color: #a5957c}
 
@@ -113,7 +135,7 @@
 
 .color46 { background-color: #1c1a1f}
 
-.color47 { background-color: #98939a}
+.sigmund { background-color: #98939a}
 
 .color48 { background-color: #a29278}
 
@@ -125,7 +147,7 @@
 
 .colour5 { background-color: #585449}
 
-.colour6 { background-color: #802534}
+.passion { background-color: #802534}
 
 .colour8 { background-color: #787e74}
 
@@ -185,6 +207,9 @@
   position: absolute;
 }
 
+.siggy:hover {
+  background-color: #802534;
+}
 
 .bottom-left {
   top: 0;

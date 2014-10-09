@@ -130,7 +130,7 @@
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A
     </div>
 
-    <div class="item text pinkish mid-left-text">
+    <div class="item text scoffz mid-left-text">
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;T<br />
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;H<br />
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E<br />
@@ -204,13 +204,13 @@
 
 
 
-    <div class="signature item bottom-right">
-      <div class="signature-top-right">Broken</div>
-      <div class="signature-middle">
+    <div class="signature item bottom-right sigmund">
+      <div class="future-siggy signature-top-right">Broken</div>
+      <div class="siggy signature-middle">
         <span class="signature-multi">Multiplication</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and
       </div>
-      <div class="signature-bot-right">Restored</div>
-      <div class="signature-name">Suzanne Duchamp . 1918-1919 .</div>
+      <div class="future-siggy signature-bot-right">Restored</div>
+      <div class="future-siggy signature-name">Suzanne Duchamp . 1918-1919 .</div>
     </div>
 
 
@@ -272,6 +272,9 @@ var is_finality = function(){
 
 // WRECK THE LAYOUT
 var installFinality = function(){
+  $(".future-siggy").addClass("siggy");
+
+
   $('.signature-top-right').click(function(){
     $(".item").css({position: 'static'})
   })
@@ -286,6 +289,7 @@ var installFinality = function(){
     $bars.css({opacity: 1})
     $('iframe').attr('src', '//www.youtube.com/embed/zUbKbhyEZYY?autoplay=1&controls=0&loop=1&playlist=zUbKbhyEZYY')
     $('.tower').css({fontSize: '100px', top: 0});
+    $(".stars").css({opacity: 1})
     $('.circle').each(function(){
       $(this).parent().css({top: '1000px'})
     })
@@ -315,6 +319,12 @@ var installFinality = function(){
 
 // DECO ALL ZEE TEXTS! ADD MORE COLOR!
     var $texts = $('.text');
+    $('.text').hover(function(){
+       var textDeco = _.sample(['line-through', 'overline', 'underline', 'none'])
+      $(this).css({textDecoration: textDeco});
+    }, function(){
+      $(this).css({textDecoration: 'none'})
+    });
     // window.setInterval(function(){
 
     //   var text = _.sample($texts);

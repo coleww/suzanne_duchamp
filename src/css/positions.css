@@ -7,6 +7,9 @@
   position: absolute;
 }
 
+.siggy:hover {
+  background-color: #802534;
+}
 
 .bottom-left {
   top: 0;
