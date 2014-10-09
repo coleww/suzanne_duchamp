@@ -251,6 +251,51 @@
   <script src="vendor.js"></script>
 
   <script>
+
+
+  var mirrorClicked = false;
+  var scaffoldClicked = false;
+  var balloonsClicked = false;
+  var starsClicked = false;
+
+
+
+var check_forFinality = function(){
+  if(is_finality()){
+    installFinality();
+  }
+}
+
+var is_finality = function(){
+  return balloonsClicked && starsClicked && scaffoldClicked && mirrorClicked;
+}
+
+// WRECK THE LAYOUT
+var installFinality = function(){
+  $('.signature-top-right').click(function(){
+    $(".item").css({position: 'static'})
+  })
+
+// RESTORE IT
+  $(".signature-bot-right").click(function(){
+
+    $(".item").css({position: 'absolute'})
+
+    // IF FINISHED ALEADY@!
+
+    $bars.css({opacity: 1})
+    $('iframe').attr('src', '//www.youtube.com/embed/zUbKbhyEZYY?autoplay=1&controls=0&loop=1&playlist=zUbKbhyEZYY')
+    $('.tower').css({fontSize: '100px', top: 0});
+    $('.circle').each(function(){
+      $(this).parent().css({top: '1000px'})
+    })
+  })
+};
+
+
+
+
+
   // CIRCLE SHIMMER! WILL BE BETTER WITH MORE LAYERS?!?!?!
     var $circles = $('.circle');
     window.setInterval(function(){
@@ -307,98 +352,109 @@
   $mirrorShatters =$(".left-text");
 
   $mirrorShatters.click(function(e){
-    $mirrorShatters.addClass('fade');
-    window.setTimeout(function(){
-      $borebore.css({opacity: 0.7, borderRadius: '5%'})
-      $borebore.append(_.shuffle($mirrorShatters.text().split("")));
-      $mirrorShatters.remove();//css({opacity: 1})
-    }, 5500)
+    if(!mirrorClicked){
+      mirrorClicked = true;
+      check_forFinality();
+      $mirrorShatters.addClass('fade');
+      window.setTimeout(function(){
+        $borebore.css({opacity: 0.7, borderRadius: '5%'})
+        $borebore.append(_.shuffle($mirrorShatters.text().split("")));
+        $mirrorShatters.remove();//css({opacity: 1})
+      }, 5500)
 
-    $('iframe').attr('src', "http://www.moma.org/audios/embed/29/734?autoplay=1")
+      $('iframe').attr('src', "http://www.moma.org/audios/embed/29/734?autoplay=1")
 
-    $bars.addClass('fade')
-
-
-
+      $bars.addClass('fade')
+    }
   })
 
   $scaffoldTots =$(".mid-left-text")
   $scaffoldTots.click(function(e){
-    $scaffoldTots.addClass('fade');
-    window.setTimeout(function(){
-      $borebore.css({opacity: 0.7, borderRadius: '5%'})
-      $borebore.append(_.shuffle($scaffoldTots.text().split("")));
-      $scaffoldTots.remove();//css({opacity: 1})
-    }, 5500)
+    if(!scaffoldClicked){
+      scaffoldClicked = true;
+      check_forFinality();
+      $scaffoldTots.addClass('fade');
+      window.setTimeout(function(){
+        $borebore.css({opacity: 0.7, borderRadius: '5%'})
+        $borebore.append(_.shuffle($scaffoldTots.text().split("")));
+        $scaffoldTots.remove();//css({opacity: 1})
+      }, 5500)
 
-    $towers = $('.tower').find('span');
-    window.setInterval(function(){
-      if($towers.length > 1) {
-        var tower_index = ~~(Math.random() * ($towers.length - 1));
-        var $tower = $($towers[tower_index]);
-        var text = $tower.text();
-        var chars = text.split('');
-        var next_tower_text = $($towers[tower_index + 1]).text();
+      $towers = $('.tower').find('span');
+      window.setInterval(function(){
+        if($towers.length > 1) {
+          var tower_index = ~~(Math.random() * ($towers.length - 1));
+          var $tower = $($towers[tower_index]);
+          var text = $tower.text();
+          var chars = text.split('');
+          var next_tower_text = $($towers[tower_index + 1]).text();
 
-        $($towers[tower_index + 1]).text(next_tower_text + _.sample(chars));
+          $($towers[tower_index + 1]).text(next_tower_text + _.sample(chars));
 
-        if (text.length > 1) {
-          $tower.text(text.substr(1,text.length -1))
-        } else {
-          var top = $('.tower').css('top').replace('px', '') | 0;
-          $('.tower').css({top: top + 5 + 'px'});
+          if (text.length > 1) {
+            $tower.text(text.substr(1,text.length -1))
+          } else {
+            var top = $('.tower').css('top').replace('px', '') | 0;
+            $('.tower').css({top: top + 5 + 'px'});
 
 
-          var f_size = $tower.css('fontSize').replace('px', '') | 0;
-          $('.tower').css({fontSize: f_size - 1 + 'px'});
-          $towers.css({fontSize: f_size - 1 + 'px'});
-          $tower.remove();
+            var f_size = $tower.css('fontSize').replace('px', '') | 0;
+            $('.tower').css({fontSize: f_size - 1 + 'px'});
+            $towers.css({fontSize: f_size - 1 + 'px'});
+            $tower.remove();
+          }
         }
-
-
-      }
-    }, 30)
+      }, 30)
+    }
   })
 
 
   $ballFly =$(".mid-right-text")
   $ballFly.click(function(e){
-    $ballFly.addClass('fade');
-    window.setTimeout(function(){
-      $borebore.css({opacity: 0.7, borderRadius: '5%'})
-      $borebore.append(_.shuffle($ballFly.text().split("")));
-      $ballFly.remove();//css({opacity: 1})
-    }, 5500)
+    if(!balloonsClicked){
+      balloonsClicked = true;
+      check_forFinality();
+      $ballFly.addClass('fade');
+      window.setTimeout(function(){
+        $borebore.css({opacity: 0.7, borderRadius: '5%'})
+        $borebore.append(_.shuffle($ballFly.text().split("")));
+        $ballFly.remove();//css({opacity: 1})
+      }, 5500)
 
-    window.setInterval(function(){
+      window.setInterval(function(){
 
-      var $bigCircle = $(_.sample($circles)).parent();
-      var top = $bigCircle.css("top").replace('px', '') | 0;
-      // console.log(top, left)
-      var topsy = (top -= 10) + 'px';
+        var $bigCircle = $(_.sample($circles)).parent();
+        var top = $bigCircle.css("top").replace('px', '') | 0;
+        // console.log(top, left)
+        var topsy = (top -= 10) + 'px';
 
 
-      $bigCircle.css({top: topsy});
-    }, 5);
+        $bigCircle.css({top: topsy});
+      }, 5);
+    }
   })
 
 
   $stardim =$(".right-text")
   $stardim.click(function(e){
-    $stardim.addClass('fade');
-    window.setTimeout(function(){
-      $borebore.css({opacity: 0.7, borderRadius: '5%'})
-      $borebore.append(_.shuffle($stardim.text().split("")));
-      $stardim.remove();//css({opacity: 1})
-    }, 5500)
-    var $stars = $('.star');
-    window.setInterval(function(){
+    if(!starsClicked){
+      starsClicked = true;
+      check_forFinality();
+      $stardim.addClass('fade');
+      window.setTimeout(function(){
+        $borebore.css({opacity: 0.7, borderRadius: '5%'})
+        $borebore.append(_.shuffle($stardim.text().split("")));
+        $stardim.remove();//css({opacity: 1})
+      }, 5500)
+      var $stars = $('.star');
+      window.setInterval(function(){
 
-      var $star = $(_.sample($stars));
-      var opac = $star.css('opacity');
-      $star.css({opacity: opac -= 0.01});
+        var $star = $(_.sample($stars));
+        var opac = $star.css('opacity');
+        $star.css({opacity: opac -= 0.01});
 
-    }, 30);
+      }, 30);
+    }
   })
 
 
@@ -420,26 +476,8 @@ $('.signature-multi').click(function(){
   }
 })
 
-// WRECK THE LAYOUT
 
-  $('.signature-top-right').click(function(){
-    $(".item").css({position: 'static'})
-  })
 
-// RESTORE IT
-  $(".signature-bot-right").click(function(){
-
-    $(".item").css({position: 'absolute'})
-
-    // IF FINISHED ALEADY@!
-
-    $bars.css({opacity: 1})
-    // $('iframe').attr('src', '//www.youtube.com/embed/zUbKbhyEZYY?autoplay=1&controls=0&loop=1&playlist=zUbKbhyEZYY')
-    $('.tower').css({fontSize: '100px', top: 0});
-    $('.circle').each(function(){
-      $(this).parent().css({top: '1000px'})
-    })
-  })
 //
   </script>
 </body>
