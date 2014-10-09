@@ -11,10 +11,24 @@
   /*color: red;*/
 }
 
+.blink {
+  animation: blink 1s steps(5, start) infinite;
+  -webkit-animation: blink 1s steps(5, start) infinite;
+}
+.blink-two {
+  animation: blink 1.1s steps(5, start) infinite;
+  -webkit-animation: blink 1.1s steps(5, start) infinite;
+}
+@keyframes blink {
+  to { visibility: hidden; }
+}
+@-webkit-keyframes blink {
+  to { visibility: hidden; }
+}
 
 .circle {
   border-radius: 100%;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
 }
 
 .circle-large {

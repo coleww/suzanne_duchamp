@@ -13,11 +13,10 @@
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body class="bg1">
-
   <div class="container">
 
     <div class="window item bottom-left">
-        <iframe class="item window-skyline" src="//www.youtube.com/embed/zUbKbhyEZYY?autoplay=1&controls=0&loop=1&playlist=zUbKbhyEZYY" frameborder="0"></iframe> -->
+        <!-- <iframe class="item window-skyline" src="//www.youtube.com/embed/zUbKbhyEZYY?autoplay=1&controls=0&loop=1&playlist=zUbKbhyEZYY" frameborder="0"></iframe> -->
 
       <div class="item bars window-top">/</div>
       <div class="item bars window-frame">|</div>
@@ -33,13 +32,14 @@
     </div>
 
     <div class="item big-green-circle">
-      <div class="item circle drk-grn circle-large">&nbsp;</div>
-      <div class="item circle brt-green circle-large">&nbsp;</div>
+      <div class="item circle drk-grn circle-large golden">&nbsp;</div>
+      <div class="item circle brt-green circle-large pissed">&nbsp;</div>
     </div>
 
 
     <div class="item big-white-circle">
       <div class="item circle lter-gray circle-large">&nbsp;</div>
+      <div class="item circle loud-gray circle-large">&nbsp;</div>
     </div>
 
 
@@ -54,12 +54,14 @@
 
     <div class="item big-brown-circle">
       <div class="item circle brown circle-large">&nbsp;</div>
+      <div class="item circle breen circle-large">&nbsp;</div>
     </div>
 
 
 
     <div class="item lil-gray-circle">
       <div class="item circle medgray circle-sm">&nbsp;</div>
+      <div class="item circle derp circle-sm">&nbsp;</div>
       <div class="item circle ltgray circle-sm">&nbsp;</div>
     </div>
 
@@ -75,26 +77,36 @@
 
     <div class="item med-brn-circle">
       <div class="item circle brawn circle-lrg">&nbsp;</div>
+      <div class="item circle brain circle-lrg">&nbsp;</div>
     </div>
 
     <div class="item sm-white-circle">
       <div class="item circle whitish circle-med">&nbsp;</div>
+      <div class="item circle watish circle-med">&nbsp;</div>
+
+      <div class="item circle pissed circle-med">&nbsp;</div>
     </div>
 
     <div class="item sm-ora-circle">
       <div class="item circle ora circle-sm">&nbsp;</div>
+
+      <div class="item circle golden circle-sm">&nbsp;</div>
+      <div class="item circle orang circle-sm">&nbsp;</div>
     </div>
 
     <div class="item sm-grn-circle">
       <div class="item circle grn circle-sm">&nbsp;</div>
+      <div class="item circle gron circle-sm">&nbsp;</div>
     </div>
 
     <div class="item sm-blu-circle">
       <div class="item circle blu circle-sm">&nbsp;</div>
+      <div class="item circle blum circle-sm">&nbsp;</div>
     </div>
 
     <div class="item sm-pnk-circle">
       <div class="item circle pnk circle-sm">&nbsp;</div>
+      <div class="item circle pank circle-sm">&nbsp;</div>
     </div>
 
 
@@ -196,15 +208,41 @@
       etc...
     </div>
 
-    <div class="item star white-star yella">
+
+
+
+
+
+
+
+
+
+<!-- STARS -->
+
+    <div class="item star blink white-star yella">
       *
     </div>
-    <div class="item star red-star red">
+    <div class="item star blink-two red-star red">
       *
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   </div>
+
+<!-- <hr/> -->
   <script src="vendor.js"></script>
 
   <script>
@@ -217,21 +255,21 @@
       var width = $(circle).css("width").replace('px', '') | 0;
 
       var turvy = (width -= 10) + 'px'
-      $(circle).css({opacity: Math.random(),
-                        width: turvy, height: turvy});
+      $(circle).css({opacity: Math.random()})
+      // $(circle).css({width: turvy, height: turvy});
     }, 300);
 
 // BALLOONS WILL FLY AWAY!
-    window.setInterval(function(){
+    // window.setInterval(function(){
 
-      var $bigCircle = $(_.sample($circles)).parent();
-      var top = $bigCircle.css("top").replace('px', '') | 0;
-      // console.log(top, left)
-      var topsy = (top -= 10) + 'px';
+    //   var $bigCircle = $(_.sample($circles)).parent();
+    //   var top = $bigCircle.css("top").replace('px', '') | 0;
+    //   // console.log(top, left)
+    //   var topsy = (top -= 10) + 'px';
 
 
-      $bigCircle.css({top: topsy});
-    }, 5);
+    //   $bigCircle.css({top: topsy});
+    // }, 5);
 
 
 // DECO ALL ZEE TEXTS! ADD MORE COLOR!
@@ -244,33 +282,33 @@
     // }, 500);
 
 
-    $towers = $('.tower').find('span');
-    window.setInterval(function(){
-      if($towers.length > 1) {
-        var tower_index = ~~(Math.random() * ($towers.length - 1));
-        var $tower = $($towers[tower_index]);
-        var text = $tower.text();
-        var chars = text.split('');
-        var next_tower_text = $($towers[tower_index + 1]).text();
+    // $towers = $('.tower').find('span');
+    // window.setInterval(function(){
+    //   if($towers.length > 1) {
+    //     var tower_index = ~~(Math.random() * ($towers.length - 1));
+    //     var $tower = $($towers[tower_index]);
+    //     var text = $tower.text();
+    //     var chars = text.split('');
+    //     var next_tower_text = $($towers[tower_index + 1]).text();
 
-        $($towers[tower_index + 1]).text(next_tower_text + _.sample(chars));
+    //     $($towers[tower_index + 1]).text(next_tower_text + _.sample(chars));
 
-        if (text.length > 1) {
-          $tower.text(text.substr(1,text.length -1))
-        } else {
-          var top = $('.tower').css('top').replace('px', '') | 0;
-          $('.tower').css({top: top + 5 + 'px'});
-
-
-          var f_size = $tower.css('fontSize').replace('px', '') | 0;
-          $('.tower').css({fontSize: f_size - 1 + 'px'});
-          $towers.css({fontSize: f_size - 1 + 'px'});
-          $tower.remove();
-        }
+    //     if (text.length > 1) {
+    //       $tower.text(text.substr(1,text.length -1))
+    //     } else {
+    //       var top = $('.tower').css('top').replace('px', '') | 0;
+    //       $('.tower').css({top: top + 5 + 'px'});
 
 
-      }
-    }, 30)
+    //       var f_size = $tower.css('fontSize').replace('px', '') | 0;
+    //       $('.tower').css({fontSize: f_size - 1 + 'px'});
+    //       $towers.css({fontSize: f_size - 1 + 'px'});
+    //       $tower.remove();
+    //     }
+
+
+    //   }
+    // }, 30)
 
 
 
@@ -288,14 +326,14 @@
 
 
 // STAR WOULD DIM
-    var $stars = $('.star');
-    window.setInterval(function(){
+    // var $stars = $('.star');
+    // window.setInterval(function(){
 
-      var $star = $(_.sample($stars));
-      var opac = $star.css('opacity');
-      $star.css({opacity: opac -= 0.01});
+    //   var $star = $(_.sample($stars));
+    //   var opac = $star.css('opacity');
+    //   $star.css({opacity: opac -= 0.01});
 
-    }, 30);
+    // }, 30);
 
 
   </script>

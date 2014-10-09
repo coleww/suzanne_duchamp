@@ -1,7 +1,5 @@
-.red { color: #77322b}
 .brown { background-color: #625141; opacity: 0.8;}
-.deep-green { color: #2e3d14; opacity: 0.6;}
-.yella { color: #dccbb1; opacity: 0.8;}
+.deep-green { background-color: #2e3d14; opacity: 0.6;}
 .drk-grn { background-color: #455612; opacity: 0.55;}
 .olive { background-color: #4d5a15; opacity: 0.5;}
 .brawn { background-color: #4b3b24; opacity: 0.8;}
@@ -18,164 +16,162 @@
 .whitish { background-color: #9997a4;opacity: 0.7;}
 .pnk { background-color: #c58095; opacity: 0.7;}
 .blu { background-color: #6d8db3; opacity: 0.6;}
+.breen { background-color: #715c2d; opacity: 0.6;}
+.brain { background-color: #665424; opacity: 0.6;}
+.jay-z-blue { background-color: #404652; opacity: 0.6;}
+.loud-gray { background-color: #a9a19f; opacity: 0.6;}
+.blum { background-color: #9395ac; opacity: 0.6;}
+.gron { background-color: #5f6100; opacity: 0.6;}
+.pank { background-color: #ccbfc8; opacity: 0.6;}
+.watish { background-color: #b9afae; opacity: 0.6;}
+.orang { background-color: #eccbba; opacity: 0.6;}
 
-
-
-
-
-
-.color1 { color: #a99975}
-
-.color2 { color: #8a7a59}
-
-.color3 { color: #715f39}
-
-.color4 { color: #715c2d}
-
-.color5 { color: #665424}
-
-.color7 { color: #978b71}
-
-.color8 { color: #a99a7b}
-
-.color9 { color: #94825e}
-
-.color10 { color: #6f5637}
-
-.color11 { color: #7c641c}
-
-.color12 { color: #5a4824}
-
+/*text colorssss*/
+.tru-blu { color: #7182a0}
+.blkish { color: #190d1b}
+.greenish { color: #073518}
 .pinkish { color: #d7c6ac}
 
-.color15 { color: #a49c89}
+/*STARZ*/
+.red { color: #77322b}
+.yella { color: #dccbb1; opacity: 0.8;}
 
-.color17 { color: #613c12}
 
-.color19 { color: #857c5f}
 
-.color20 { color: #584121}
 
-.color21 { color: #362b19}
 
-.color22 { color: #a7977d}
+.golden { background-color: #625119;  opacity: 0.8;}
 
-.color26 { color: #2a391a}
+.pissed { background-color: #7c641c;  opacity: 0.8;}
 
-.color27 { color: #c3b298}
+.derp { background-color: #a8997c; opacity: 0.8;}
 
-.color28 { color: #77674d}
 
-.jay-z-blue { color: #404652}
 
-.color30 { color: #b2a187}
+.color1 { background-color: #a99975}
 
-.color31 { color: #ac9c83}
+.color2 { background-color: #8a7a59}
 
-.color33 { color: #ba9970}
+.color3 { background-color: #715f39}
 
-.color34 { color: #786254}
+.color7 { background-color: #978b71}
 
-.color35 { color: #a8997c}
+.color8 { background-color: #a99a7b}
 
-.color36 { color: #8f7f65}
+.color9 { background-color: #94825e}
 
-.color37 { color: #968470}
+.color10 { background-color: #6f5637}
 
-.color38 { color: #b38b58}
 
-.color40 { color: #87677e}
+.color12 { background-color: #5a4824}
 
-.color41 { color: #a5957c}
+.color15 { background-color: #a49c89}
 
-.color42 { color: #807057}
+.color17 { background-color: #613c12}
 
-.color43 { color: #4a422f}
+.color19 { background-color: #857c5f}
 
-.color44 { color: #898375}
+.color20 { background-color: #584121}
 
-.color45 { color: #b1a28d}
+.color21 { background-color: #362b19}
 
-.color46 { color: #1c1a1f}
+.color22 { background-color: #a7977d}
 
-.color47 { color: #98939a}
+.color26 { background-color: #2a391a}
 
-.color48 { color: #a29278}
+.color27 { background-color: #c3b298}
 
-.color49 { color: #93876d}
+.color28 { background-color: #77674d}
 
-.colour1 { color: #777963}
+.color30 { background-color: #b2a187}
 
-.colour2 { color: #a9a19f}
+.color31 { background-color: #ac9c83}
 
-.colour3 { color: #5d5c48}
+.color33 { background-color: #ba9970}
 
-.colour5 { color: #585449}
+.color34 { background-color: #786254}
 
-.colour6 { color: #802534}
 
-.colour7 { color: #9395ac}
+.color36 { background-color: #8f7f65}
 
-.colour8 { color: #787e74}
+.color37 { background-color: #968470}
 
-.colour9 { color: #76786a}
+.color38 { background-color: #b38b58}
 
-.colour10 { color: #a3948f}
+.color40 { background-color: #87677e}
 
-.colour11 { color: #5f6100}
+.color41 { background-color: #a5957c}
 
-.colour12 { color: #494d01}
+.color42 { background-color: #807057}
 
-.colour14 { color: #272b37}
+.color43 { background-color: #4a422f}
 
-.colour15 { color: #9c9b99}
+.color44 { background-color: #898375}
 
-.greenish { color: #073518}
+.color45 { background-color: #b1a28d}
 
-.colour17 { color: #625119}
+.color46 { background-color: #1c1a1f}
 
-.colour18 { color: #ccbfc8}
+.color47 { background-color: #98939a}
 
-.colour19 { color: #a0a89b}
+.color48 { background-color: #a29278}
 
-.colour20 { color: #454a33}
+.color49 { background-color: #93876d}
 
-.colour22 { color: #a1969a}
+.colour1 { background-color: #777963}
 
-.colour25 { color: #3e3f00}
+.colour3 { background-color: #5d5c48}
 
-.colour26 { color: #122921}
+.colour5 { background-color: #585449}
 
-.colour27 { color: #b9afae}
+.colour6 { background-color: #802534}
 
-.colour28 { color: #12210e}
+.colour8 { background-color: #787e74}
 
-.colour32 { color: #eccbba}
+.colour9 { background-color: #76786a}
 
-.colour33 { color: #ad9287}
+.colour10 { background-color: #a3948f}
 
-.colour34 { color: #6b705c}
+.colour12 { background-color: #494d01}
 
-.colour35 { color: #7b718c}
+.colour14 { background-color: #272b37}
 
-.colour36 { color: #807f7a}
+.colour15 { background-color: #9c9b99}
 
-.colour38 { color: #a58683}
 
-.tru-blu { color: #7182a0}
+.colour19 { background-color: #a0a89b}
 
-.colour41 { color: #9d9195}
+.colour20 { background-color: #454a33}
 
-.colour42 { color: #a2a395}
+.colour22 { background-color: #a1969a}
 
-.colour43 { color: #404443}
+.colour25 { background-color: #3e3f00}
 
-.colour44 { color: #bdb6c8}
+.colour26 { background-color: #122921}
 
-.colour45 { color: #888f97}
+.colour28 { background-color: #12210e}
 
-.blkish { color: #190d1b}
+.colour33 { background-color: #ad9287}
 
-.colour48 { color: #96968e}
+.colour34 { background-color: #6b705c}
 
-.colour49 { color: #9c9c9a}
+.colour35 { background-color: #7b718c}
+
+.colour36 { background-color: #807f7a}
+
+.colour38 { background-color: #a58683}
+
+.colour41 { background-color: #9d9195}
+
+.colour42 { background-color: #a2a395}
+
+.colour43 { background-color: #404443}
+
+.colour44 { background-color: #bdb6c8}
+
+.colour45 { background-color: #888f97}
+
+.colour48 { background-color: #96968e}
+
+.colour49 { background-color: #9c9c9a}
+
