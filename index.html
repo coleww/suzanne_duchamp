@@ -62,14 +62,14 @@
       <div class="item circle ltgray circle-sm">&nbsp;</div>
     </div>
 
-    <div class="item center tower">
-      <span style="text-decoration: line-through;">\_-\_-_-_/-_/</span><br />
-      <span style="text-decoration: overline;">\_-_-_-_-_/</span><br />
-      <span style="text-decoration: overline;">\_--\--_/</span><br />
-      <span style="text-decoration: underline;">\^X^/</span><br />
-      <span style="text-decoration: underline;">\</span><span style="text-decoration: line-through;">xx</span><span style="text-decoration: underline;">/</span><br />
-      <span style="text-decoration: line-through;"> \x/</span><br />
-      <span style="text-decoration: overline;">\/</span>
+    <div class="item center tower" style="word-wrap: break-word;max-width: 500px; ">
+      <span style="max-width: 500px; word-wrap: break-word; text-decoration: line-through;">\_-\_-_-_/-_/</span><br />
+      <span style="max-width: 500px; word-wrap: break-word; text-decoration: overline;">\_-_-_-_-_/</span><br />
+      <span style="max-width: 500px; word-wrap: break-word; text-decoration: overline;">\_--\--_/</span><br />
+      <span style="max-width: 500px; word-wrap: break-word; text-decoration: underline;">\^X^/</span><br />
+      <span style="max-width: 500px; word-wrap: break-word; text-decoration: underline;">\</span><span style="text-decoration: line-through;">xx</span><span style="text-decoration: underline;">/</span><br />
+      <span style="max-width: 500px; word-wrap: break-word; text-decoration: line-through;"> \x/</span><br />
+      <span style="max-width: 500px; word-wrap: break-word; text-decoration: overline;">\/</span>
     </div>
 
     <div class="item med-brn-circle">
@@ -203,7 +203,6 @@
     </div>
 
 
-
   </div>
   <script src="vendor.js"></script>
 
@@ -231,21 +230,49 @@
 
 
       $bigCircle.css({top: topsy});
-    }, 50);
+    }, 5);
 
 
 // DECO ALL ZEE TEXTS! ADD MORE COLOR!
     var $texts = $('.text');
+    // window.setInterval(function(){
+
+    //   var text = _.sample($texts);
+    //   var textDeco = _.sample(['line-through', 'overline', 'underline', 'none'])
+    //   $(text).css({textDecoration: textDeco});
+    // }, 500);
+
+
+    $towers = $('.tower').find('span');
     window.setInterval(function(){
+      if($towers.length > 1) {
+        var tower_index = ~~(Math.random() * ($towers.length - 1));
+        var $tower = $($towers[tower_index]);
+        var text = $tower.text();
+        var chars = text.split('');
+        var next_tower_text = $($towers[tower_index + 1]).text();
 
-      var text = _.sample($texts);
-      var textDeco = _.sample(['line-through', 'overline', 'underline', 'none'])
-      $(text).css({textDecoration: textDeco});
-    }, 500);
+        $($towers[tower_index + 1]).text(next_tower_text + _.sample(chars));
 
+        if (text.length > 1) {
+          $tower.text(text.substr(1,text.length -1))
+        } else {
+          var top = $('.tower').css('top').replace('px', '') | 0;
+          $('.tower').css({top: top + 5 + 'px'});
+
+
+          var f_size = $tower.css('fontSize').replace('px', '') | 0;
+          $('.tower').css({fontSize: f_size - 1 + 'px'});
+          $towers.css({fontSize: f_size - 1 + 'px'});
+          $tower.remove();
+        }
+
+
+      }
+    }, 30)
 
 // scaffolding totters!
-// travers the spans inside of $('.tower')
+// travers the spans inside of
 // for each of them, remove it and insert it inside it's next lowest sibling
 // add CSS to tower to make the text overlay on each other and stuff (line0height...text-spacing?)
 
@@ -253,6 +280,8 @@
 // mirror would shatter
 // swap out iframe for things?
 // overlay duchamp esque cracks?
+// <iframe src="http://www.moma.org/audios/embed/29/734" width="480" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+// let that play
 
 
 // STAR WOULD DIM

@@ -13,7 +13,7 @@ gulp.task('watch', function () {
 
 gulp.task('js', function() {
   gulp.src(['src/js/*.js'])
-    .pipe(uglify())
+    // .pipe(uglify())
     .pipe(concat('app.js'))
     .pipe(gulp.dest('./'));
 });
