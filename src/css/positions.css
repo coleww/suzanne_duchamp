@@ -105,9 +105,22 @@
   padding: 25px;
 }
 
+.texthing {
+  top: 50px;
+  left: 966px;
+  padding: 25px;
+  width: 600px;
+  border-radius: 15px;
+}
+
 .artbanner {
   top: 425px;
   font-weight: bold;
+  left: 1000px;
+}
+
+.poembanner{
+  top:25px;
   left: 1000px;
 }
 
