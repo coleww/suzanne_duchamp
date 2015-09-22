@@ -1,9 +1,4 @@
 
-$('.text').addClass('fade');
-$('.tower').addClass('fade');
-$('.circle').addClass('fade');
-$('.star').addClass('fade');
-$('.window').addClass('fade');
 $textDude = $('.texthing');
 
 
